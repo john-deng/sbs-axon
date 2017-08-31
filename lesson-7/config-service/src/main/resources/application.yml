@@ -13,8 +13,8 @@ spring:
     config:
       server:
         native:
-          searchLocations: file:///D:/Repository/github/cqrs/axon/sbs-axon/lesson-7/configs
-          #searchLocations: /usr/edi/spring/configs
+#          searchLocations: file:///D:/Repository/github/cqrs/axon/sbs-axon/lesson-7/configs
+          searchLocations: /Users/johnd/workspace/thirdparty/sbs-axon/configs
    #     git:
           # uri: https://github.com/sunnykaka/mysteam-config-repo
    #       uri: file:///D:/Repository/github/spring-cloud-poc/config-server/configs

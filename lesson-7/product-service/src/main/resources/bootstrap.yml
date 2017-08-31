@@ -8,10 +8,10 @@ spring:
       discovery.serviceId: config-service
       failFast: false
   datasource:
-      url: jdbc:mysql://10.1.110.21:3306/cqrs
+      url: jdbc:mysql://mysql-dev.vpclub.io:3306/cqrs
       driverClassName: com.mysql.jdbc.Driver
       username: root
-      password: 111111
+      password: "@vpclubdev"
       validation-query: SELECT 1;
       initial-size: 2
       sql-script-encoding: UTF-8
@@ -20,13 +20,13 @@ spring:
     hibernate.ddl-auto: update
   # mq for event bus
   rabbitmq:
-    host: 112.124.34.47
+    host: localhost
     port: 5672
-    username: axon
-    password: axon
+    username: guest
+    password: guest
   data:
     mongodb:
-      host: 10.1.110.24
+      host: mongo-dev.vpclub.io
       port: 27017
       database: axon
 
@@ -37,7 +37,7 @@ eureka:
   client:
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://${config.host:10.1.110.21}:1111/eureka/
+      defaultZone: http://${config.host:localhost}:1111/eureka/
 
 server:
   port: 8083 #HTTP(Tomcat) port
