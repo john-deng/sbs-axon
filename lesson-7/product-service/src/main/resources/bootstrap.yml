@@ -20,7 +20,7 @@ spring:
     hibernate.ddl-auto: update
   # mq for event bus
   rabbitmq:
-    host: localhost
+    host: 172.16.5.90
     port: 5672
     username: guest
     password: guest
